@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamud Aded's CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(174, 233, 243, 0.267);
+            color: rgb(17, 19, 18) 13);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+        }
+        h1 ,h2 {
+            text-align: center;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .section{
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #b2d9e9;
+            background-color:#fff;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            padding: 8px;
+            margin-bottom: 5px;
+            width: 100px;
+            border: 1px solid #e4e9eb ;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: rgb(255, 174, 0);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #df8484;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mohamud Aded's Online CV</h1>
+
+        <!--bio-->
+        <div class="section">
+            <h2>BIO</h2>
+            <p>My name is MOHAMUD ADED. I have experience in bookkeeping and inventory management.
+                My passions are problem solving and various physical pursuits.What motivates
+                me is the desire of success and the fear of failure. My ultimate goal is to own
+                a multi-billion dollar business.
+            </p>
+        </div>
+
+        <!--Contact details-->
+        <div class="section">
+            <h2>Contact Details</h2>
+            <p> Name: MOHAMUD ADED</p>
+            <p>Contact Number: 0835844859</p>
+            <p>Email Address: Aded670101@gamil.com</p>
+        </div>
+
+        <!--Skills and Competencies-->
+        <div class="section">
+            <h2>Skills and Competencies</h2>
+            <ul>
+                <li>Bookkeeping</li>
+                <li>Inventory management</li>
+                <li>Problem solving</li>
+                <li>Physical indurance </li>
+            </ul>
+        </div>
+
+        <!--Education-->
+        <div class="section">
+            <h2>--Education--</h2>
+            <p>High school </p>
+        </div>
+
+        <!--Work experience-->
+        <div class="section">
+            <h2> Work experience</h2>
+            <p> Experience in bookkeeping and managing inventory for a large wholesale business
+                where i developed skills in organization, accuracy and time management. Gained practical
+                understanding of inventory tracking and financial recording.
+            </p>
+        </div>
+
+        <!---Search from (GET)-->
+        <div class="section">
+            <h2> Search My CV</h2>
+            <form method="GET" action="/search">
+                <label for="search">Search for Keywords</label>
+                <input type="text" id="search" name="search" placeholder="Enter keyword">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+
+        <!--Contact Form (Post)-->
+        <div class="section">
+            <h2>Contact Me</h2>
+            <form method="POST" action="/contact">
+                <label for="visitor name">Your Name:</label>
+                <input type="text" id="visitor name" name="visitor name" required>
+
+                <label for="visitor_email">Your Email:</label>
+                <input type="email" id="visitor email" name="visitor_email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" row="4" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
